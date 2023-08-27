@@ -20,15 +20,19 @@ function Navbar() {
         <Link className="nav-link" to="/create-recipe">
           Create Recipe
         </Link>
-        <Link className="nav-link" to="/save-recipe">
-          Saved Recipes
-        </Link>
         {!cookies.access_token ? (
-          <Link className="nav-link" to="/auth">
-            Register/Login
-          </Link>
+          <>
+            <Link className="nav-link" to="/auth">
+              Register/Login
+            </Link>
+            <Link className="nav-link" to="/save-recipe">
+              Saved Recipes
+            </Link>
+          </>
         ) : (
-          <button onClick={logOut}>Logout</button>
+          <button className="logoutButton" onClick={logOut}>
+            Logout
+          </button>
         )}
       </div>
     </div>
