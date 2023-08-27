@@ -1,0 +1,65 @@
+/* Home.css */
+.home-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.recipes-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.recipes-list {
+    list-style: none;
+    padding: 0;
+}
+
+.recipe-item {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.recipe-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.recipe-instructions {
+    margin-bottom: 10px;
+}
+
+.recipe-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.recipe-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cooking-time {
+    font-style: italic;
+    color: #666;
+}
+
+.saveButton {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
